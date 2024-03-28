@@ -1,0 +1,15 @@
+li {
+  list-style: none;
+}
+.title {
+  margin-left: 80px;
+}
+.stat-list {
+  display: flex;
+  gap: 20px;
+}
+.stat-list .item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
