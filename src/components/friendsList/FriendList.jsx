@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const FriendList = ({ friends }) => {
   return (
     <section className="friends">
@@ -21,4 +23,11 @@ export const FriendList = ({ friends }) => {
       </ul>
     </section>
   );
+};
+
+FriendList.propTypes = {
+  name: PropTypes.string,
+  avatar: PropTypes.string,
+  id: PropTypes.number,
+  isOnline: PropTypes.bool,
 };

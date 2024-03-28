@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Statistics = ({ title, stats }) => {
   const getRandomColor = () => {
     const letters = '0123456789ABCDEF';
@@ -28,4 +30,8 @@ export const Statistics = ({ title, stats }) => {
       </div>
     </section>
   );
+};
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array,
 };
