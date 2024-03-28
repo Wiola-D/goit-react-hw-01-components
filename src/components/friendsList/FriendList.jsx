@@ -1,6 +1,6 @@
 export const FriendList = ({ friends }) => {
   return (
-    <section class="statistics">
+    <section class="friends">
       <ul class="friends-list">
         {friends.map(friend => (
           <li class="item">
@@ -10,7 +10,7 @@ export const FriendList = ({ friends }) => {
               ></div>
             </span>
             <img
-              class="avatar"
+              class="friend-avatar"
               src={friend.avatar}
               alt="User avatar"
               width="48"
