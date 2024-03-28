@@ -1,21 +1,21 @@
 export const FriendList = ({ friends }) => {
   return (
-    <section class="friends">
-      <ul class="friends-list">
+    <section className="friends">
+      <ul className="friends-list">
         {friends.map(friend => (
-          <li class="item">
+          <li key={friend.id} className="item">
             <span>
               <div
                 className={`status ${friend.isOnline ? 'online' : 'offline'}`}
               ></div>
             </span>
             <img
-              class="friend-avatar"
+              className="friend-avatar"
               src={friend.avatar}
               alt="User avatar"
               width="48"
             />
-            <p class="name">{friend.name}</p>
+            <p className="name">{friend.name}</p>
           </li>
         ))}
       </ul>
